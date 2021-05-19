@@ -1,0 +1,48 @@
+header {
+    background: url(../assets/home-header.jpg), $background;
+    height: 120vh;
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+}
+
+.header-content {
+    border: 10px solid slategrey;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-nav {
+    border: 5px solid palegreen;
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+button {
+    display: none;
+}
+
+.feature {
+    border: 10px solid palegreen;
+    display: flex;
+    height: 80%;
+}
+
+.feature h1 {
+    // border: 5px solid violet;
+    flex-basis: 50%;
+
+}
+
+.feature-image {
+    // border: 5px solid coral;
+    flex-basis: 70%;
+    align-self:flex-end;
+}
+
