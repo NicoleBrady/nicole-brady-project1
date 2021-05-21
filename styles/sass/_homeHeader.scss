@@ -1,12 +1,12 @@
 header {
     background: url(../assets/home-header.jpg), $background;
     height: 120vh;
+    max-height: 800px;
     background-size: contain, cover;
     background-repeat: no-repeat;
 }
 
 .header-content {
-    border: 10px solid slategrey;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -14,14 +14,34 @@ header {
 }
 
 .main-nav {
-    border: 5px solid palegreen;
     display: flex;
     justify-content: flex-start;
-    width: 50%;
+    width: 550px;
+    margin-top: 60px;
 }
 
 .main-nav ul {
     display: flex;
+    justify-content: space-between;
+        li{
+            
+                a {
+                    @include body($accent, 700);
+                    margin: 20px 20px;
+                    padding-bottom: 2px;
+                    text-align: center;
+                    letter-spacing: 0.8px;
+                    border-bottom: 3px solid transparent;
+                        &:hover {
+                            transition: ease-in 0.1s;
+                            border-bottom: 3px solid $secondary;
+                        }
+            }
+        }
+}
+
+.main-nav ul li:first-child a{
+    margin-left: 0;
 }
 
 button {
@@ -29,20 +49,29 @@ button {
 }
 
 .feature {
-    border: 10px solid palegreen;
     display: flex;
+    align-items: center;
     height: 80%;
+    margin-left: 60px;
+    position: relative;
 }
 
 .feature h1 {
-    // border: 5px solid violet;
-    flex-basis: 50%;
-
+    @include heading(6.9rem, $secondary);
+    line-height: 8.5rem;
+    max-width: 500px;
+    width: 50%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 4px #000;
 }
 
 .feature-image {
-    // border: 5px solid coral;
-    flex-basis: 70%;
-    align-self:flex-end;
+    width: 62%;
+    max-width: 800px;
+    align-self:flex-start;
+    position: absolute;
+    right: 0;
+    top: 22px;
 }
 

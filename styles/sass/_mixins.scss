@@ -1,0 +1,14 @@
+@mixin heading($size, $color) {
+    font-family: 'IM Fell English', serif;
+    font-size: $size;
+    color: $color;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+@mixin body($color, $weight) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    color: $color; 
+    font-weight: $weight;
+}
