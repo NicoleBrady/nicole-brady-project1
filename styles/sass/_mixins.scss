@@ -12,3 +12,21 @@
     color: $color; 
     font-weight: $weight;
 }
+
+@mixin link-button {
+    background: $secondary;
+    color: $primary;
+    font-family: 'IM Fell English', serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 10px 10px 6px 10px;
+}
+
+@mixin footer {
+    background: $secondary;
+    color: $primary;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 4rem;
+}
