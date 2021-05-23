@@ -1,0 +1,65 @@
+// *******Home page media queries start here**********
+@media (max-width: 1024px) {
+
+    header {
+        height: 80vh;
+    }
+
+    .feature h1 {
+        font-size: 6rem;
+        line-height: 8rem;
+        padding-bottom: 40px;
+    }
+
+    .feature-image {
+        max-width: 500px;
+    }
+
+    article.right {
+        padding-left: 70px;
+    }
+
+    article.left {
+        padding-right: 70px;
+    }
+
+    .image-container.section-two.left {
+        transform: translate(-20%, -15%);
+    }
+
+    .third-section {
+        height: 55vh;
+    }
+
+    .fifth-section {
+        height: 55vh;
+    }
+    
+    .image-container.section-five {
+        margin: 10px 70px 20px 50px;
+        min-width: 300px;
+    }
+
+    .sixth-section {
+        height: 55vh;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .section-five.grid {
+        align-items: center;
+    }
+    
+    .image-container.section-five {
+        margin: 0 70px 20px 50px;
+        min-width: 150px;
+        height: 150px;
+    }
+
+    .sixth-section {
+        height: 35vh;
+    }
+
+}

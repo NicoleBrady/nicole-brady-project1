@@ -58,7 +58,6 @@
 .second-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 120px;
     width: 85%;
 }
 
@@ -76,11 +75,13 @@ article.left {
 
 article.right {
     align-items: flex-start;
+    padding-left: 90px;
 }
 
 article.left {
     align-items: flex-end;
     text-align: right;
+    padding-right: 90px;
 }
 
 article.right p,
@@ -189,7 +190,8 @@ article.left a {
 .image-container.section-five {
     flex: 0 0 20%;
     min-width: 200px;
-    margin: 0 70px 20px 60px;
+    margin: 0 70px 20px 50px;
+    border: 5px solid red;
         img {
             box-shadow: -20px 22px 0px -5px $secondary;
         }
