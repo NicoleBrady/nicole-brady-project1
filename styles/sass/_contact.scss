@@ -1,0 +1,89 @@
+.contact-main {
+    background-color: $background;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+        section {
+            padding: 70px 0 0 40px;
+        }
+}
+
+.contact-container p:nth-of-type(1) {
+    padding: 10px 0 20px;
+}
+
+.contact-container p {
+    line-height: 28px;
+}
+
+// Social media and contact info
+
+.social-media {
+    display: flex;
+    li {
+        padding-right: 26px;
+        a {
+            color: $primary;
+            font-size: 2rem;
+            &:hover {
+                color: $secondary;
+                transition: ease-in 0.1s;
+            }
+        }
+    }
+}
+
+
+// Contact form
+
+form[action="contact-form"] {
+    background-color: $primary;
+    padding: 40px;
+    // I tried to do transform translate...but couldn't get it to work here. So used margin instead...
+    margin: -126px 0px 100px 26px;
+    box-shadow: 20px 22px 0px -5px $secondary;
+}
+
+input {
+    color: $accent;
+    background-color: transparent;
+}
+
+::placeholder {
+    opacity: 1;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="text"] {
+    border: none;
+}
+
+input[type="name"],
+input[type="email"] {
+    width: 48%;
+    padding: 20px;
+    border-bottom: 2px solid $secondary;
+}
+
+input[type="name"] {
+    margin-right: 20px;
+}
+
+input[type="text"] {
+    border: 2px solid $secondary;
+    width: 100%;
+    margin-top: 35px;
+    padding: 20px 20px 150px;
+}
+
+.contact-button {
+    @include button($primary);
+    background-color: $secondary;
+    border: none;
+    width: 100%;
+    margin-top: 30px;
+    padding: 12px 0 10px 0;
+}

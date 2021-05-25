@@ -1,5 +1,13 @@
+// * {
+//     overflow:hidden;
+// }
+
 html {
     font-size: 62.5%;
+}
+
+body {
+    @include body(#000, 400);
 }
 
 h1,
@@ -30,13 +38,15 @@ a {
 }
 
 .wrapper {
-    max-width: 1400px;
-    width: 100%;
+    max-width: 1300px; 
+    width: 95%; 
     margin: 0 auto;
-}
+    }
+
 
 .inner-wrapper {
-    max-width: 1280px;
+    max-width: 1400px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -52,3 +62,8 @@ a {
 .skip-link:focus {
     left: 0;
 }
+
+.burger-nav {
+    display: none;
+}
+

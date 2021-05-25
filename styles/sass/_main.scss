@@ -23,10 +23,10 @@
     line-height: 5.9rem;
 }
 
-.text-content.section-one p {
-        @include body(#3e3e3e, 400);
-        letter-spacing: 0.8px;
-        line-height: 20px;
+.section-one p {
+    @include body(#3e3e3e, 400);
+    letter-spacing: 0.8px;
+    line-height: 20px;
 }
 
 .icon-container {

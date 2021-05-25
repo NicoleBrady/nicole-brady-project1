@@ -2,11 +2,9 @@
 @import 'mixins';
 @import 'setup';
 @import 'general';
-@import 'homeHeader';
-@import 'homeMain';
-@import 'blogHeader';
-@import 'blogMain';
-@import 'contactHeader';
-@import 'contactMain';
+@import 'header';
+@import 'main';
+@import 'blog';
+@import 'contact';
 @import 'footer';
 @import 'mediaQueries';

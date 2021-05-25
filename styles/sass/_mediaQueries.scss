@@ -1,9 +1,13 @@
 // *******Home page media queries start here**********
+@media (max-width: 1400px) {
+   
+    .feature-image {
+        border: none;
+    }
+}
+
 @media (max-width: 1024px) {
 
-    header {
-        height: 80vh;
-    }
 
     .feature h1 {
         font-size: 6rem;
@@ -62,4 +66,75 @@
         height: 35vh;
     }
 
+    // Contact page
+    .desktop-nav {
+        display: none;
+    }
+
+    .burger-nav {
+        display: block;
+        text-align: right;
+        button {
+            margin: 20px 0;
+            color: $accent;
+            border: none;
+            background: transparent;
+            font-size: 4rem;
+        }
+    }
+
+    .contact-header h1 {
+        font-size: 5.6rem;
+        padding-bottom: 65px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    form[action="contact-form"] {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin: 60px 30px 0px 30px;
+    }
+
+    .contact-container section {
+        text-align: center;
+        margin-bottom: 40px;
+        .social-media {
+            justify-content: center;
+        }
+    }
+
+    .social-media li:last-child {
+        padding-right: 0px;
+    }
+
 }
+
+// Mobile 
+@media (max-width: 500px) {
+
+    body {
+        font-size: 1.6rem;
+        line-height: 24px;
+    }
+
+    // Contact
+
+    .contact-header h1 {
+        font-size: 4.2rem;
+    }
+
+    .contact-container p {
+        line-height: 22px;
+    }
+
+    input[type="name"],
+    input[type="email"] {
+        width: 100%;
+        padding: 14px;
+    }
+}
+

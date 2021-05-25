@@ -1,8 +1,8 @@
-header {
-    background: url(../assets/home-header.jpg), $background;
+.home-header {
+    background: url(./assets/home-header.jpg), $background;
     height: 120vh;
-    max-height: 800px;
     background-size: contain, cover;
+    background-position:  top center;
     background-repeat: no-repeat;
 }
 
@@ -44,10 +44,6 @@ header {
     margin-left: 0;
 }
 
-button {
-    display: none;
-}
-
 .feature {
     display: flex;
     align-items: center;
@@ -73,5 +69,42 @@ button {
     position: absolute;
     right: 0;
     top: 22px;
+    border-right: 18px solid $secondary;
 }
 
+// Contact
+
+.contact-header {
+    background-image: url(../assets/contact-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.contact-header h1 {
+    @include heading(6.6rem, $accent);
+    padding-bottom: 300px;
+}
+
+.main-nav {
+    display: flex;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.main-nav li {
+    padding: 30px 26px 20px 0;
+}
+
+.main-nav li a {
+    @include body($accent, 700);
+    border-bottom: 3px solid transparent;
+    &:hover,
+    &:active,
+    &:focus {
+        transition: ease-in 0.3s;
+        border-bottom: 3px solid $secondary;
+    }
+}
