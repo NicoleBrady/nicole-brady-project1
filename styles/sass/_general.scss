@@ -7,7 +7,8 @@ html {
 }
 
 body {
-    @include body(#000, 400);
+    @include body(#343434, 400);
+    line-height: 2.8rem;
 }
 
 h1,
@@ -65,5 +66,29 @@ a {
 
 .burger-nav {
     display: none;
+}
+
+.blue-h2 {
+    @include heading(4.6rem, $primary);
+    line-height: 8rem;
+}
+
+.white-h3 {
+    @include heading(4.6rem, #FFF);
+    line-height: 6rem;
+}
+
+.blue-h3 {
+    @include heading(4rem, $primary);
+    line-height: 4.9rem;
+}
+
+.yellow-h3 {
+    @include heading(3.6rem, $secondary);
+    line-height: 6rem;
+}
+
+.link {
+    @include link-button;
 }
 

@@ -10,6 +10,113 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    
+    <header class="blog-header">
+        <div class="wrapper">
+            
+            <!-- Main site navigation -->
+            <nav class="desktop-nav">
+                <ul class="main-nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+                <!-- Mobile nav -->
+            <nav class="burger-nav">
+                <button><i class="fas fa-bars"></i></button>
+            </nav>
+
+            <h1>Blog</h1>
+
+        </div>
+    </header>
+
+    <!-- Main starts here -->
+    <main>
+        <div class="blog-container">
+
+            <!-- Aside section -->
+            <aside>
+                <div class="side-box">
+                    <div class="side-image">
+                        <img src="./assets/blog-side-image.jpg" alt="boat deck with sails viewing sunset">
+                    </div>
+                    <div>
+                        <h3 class="yellow-h3">Our Mission</h3>
+                        <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. Find out more.</p>
+                        <h3 class="yellow-h3">Recent Posts</h3>
+                        <ul>
+                            <li>Donec facilisis tortor ut</li>
+                            <li>Augue lacinia at viverra</li>
+                            <li>Semper sed sapien metus</li>
+                            <li>Scelerisque nec pharetra id</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Post section -->
+            <div>
+                
+                <section class="post-container">
+                    <div class="post-image">
+                        <img src="./assets/blog-post-image.jpg" alt="rope tied to boat in water">
+                    </div>
+
+                    <div class="post">
+                        <h2 class="blue-h2">Next Destination</h2>
+                        <p class="post-info"><time datetime="2019-10-30">Monday October 30, 2019</time> by Sulaire</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, nesciunt similique. Doloribus qui veritatis doloremque omnis ea saepe quis voluptate cumque quod reiciendis aut exercitationem recusandae cum quibusdam officiis, obcaecati maxime vel quam. Laborum, magnam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolores exercitationem rem repudiandae magnam. Aliquam sunt aperiam esse cupiditate, tenetur placeat, numquam nulla ab dolore deserunt, nobis fuga. Et, ad quaerat dolorem dicta nobis eos nulla sit dignissimos ea error asperiores impedit, doloremque vitae eligendi iste, doloribus odio non itaque?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo eum accusantium numquam voluptatibus, incidunt suscipit atque corrupti facere? Placeat, sequi eius assumenda quasi consequuntur dolores voluptate adipisci at odit corrupti non error iste, ipsum doloribus omnis. Ad accusantium optio amet placeat nam praesentium ab consequuntur blanditiis facilis aperiam eum magnam ea quos aut quis esse assumenda vel, soluta nostrum nemo perspiciatis. Adipisci delectus quidem voluptas impedit ea eaque, asperiores inventore!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ea quod consequatur earum officiis, repellat veritatis, consectetur molestias corrupti adipisci esse quam sint!</p>
+                    </div>
+                </section>
+
+                <!-- Comments Section -->
+                <section class="comments">
+                    <h3 class="blue-h3">Comments:</h3>
+                    <div class="comment">
+                        <div class="headshot-image">
+                            <img src="./assets/comment-1.jpg" alt="headshot">
+                        </div>
+                        <div class="comment-text">
+                            <p class="comment-info"><time datetime="2019-10-09">Monday October 9th, 2019</time> by Ali</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odio tempora, consequatur hic explicabo officia quae repellendus aut amet id asperiores, inventore at laudantium eius dolore molestias beatae sequi dolores blanditiis ipsa magni temporibus alias?</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="headshot-image">
+                            <img src="./assets/comment-2.jpg" alt="Headshot">
+                        </div>
+                        <div class="comment-text">
+                            <p class="comment-info"><time datetime="2019-10-10">Monday October 10th, 2019</time> by Lisa</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis totam accusamus dolore repudiandae quibusdam sapiente dignissimos officiis distinctio ut officia ipsa neque natus consequuntur, iusto consectetur iure dolorem sunt recusandae optio rem placeat tempore eligendi.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Form Section -->
+                <form action="comment-form" class="comment-form">
+                    <label for="name" class="visually-hidden">Name</label>
+                    <input type="name" placeholder="Name">
+                    <label for="email" class="visually-hidden">Email address</label>
+                    <input type="email" placeholder="Email">
+                    <label for="message" class="visually-hidden">Message</label>
+                    <input type="text" placeholder="Message">
+                    <button type="submit" class="contact-button">Post Comment</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>Copyright &#169; 2021 Juno College</p>
+    </footer>
 </body>
 </html>

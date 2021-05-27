@@ -9,24 +9,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 28px;
-    width: 85%;
-    padding: 2% 0 8% 0;
+    padding: 11% 0 8% 0;
 }
 
 .first-grid li {
-    display: inline-block;
     display: flex;
-}
-
-.text-content h2 {
-    @include heading(3.2rem, $primary);
-    line-height: 5.9rem;
-}
-
-.section-one p {
-    @include body(#3e3e3e, 400);
-    letter-spacing: 0.8px;
-    line-height: 20px;
 }
 
 .icon-container {
@@ -56,98 +43,66 @@
 }
 
 .second-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 85%;
-}
-
-article.right,
-article.left {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-        h3 {
-            @include heading(2.8rem, #FFF);
-            line-height: 4.9rem;
-        }
+    flex-wrap: wrap;
+    // padding: 100px 0;
 }
 
-article.right {
-    align-items: flex-start;
-    padding-left: 90px;
+.section-two {
+    width: 50%;
 }
 
-article.left {
-    align-items: flex-end;
-    text-align: right;
-    padding-right: 90px;
-}
-
-article.right p,
-article.left p {
-    @include body(#FFF, 400);
-    letter-spacing: 0.8px;
-    line-height: 20px;
-    padding-bottom: 30px;
-}
-
-article.right a,
-article.left a {
-    background: $secondary;
-    color: $primary;
-    font-family: 'IM Fell English', serif;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    padding: 10px 10px 6px 10px;
-}
-
-.image-container.section-two.left {
-    width: 100%;
-    transform: translate(-20%, -10%);
+.section-two.image-container.left {
+    transform: translateY(-8%);
+    padding-right: 6%;
+    order: 1;
         img {
             box-shadow: 20px 22px 0px -5px $secondary;
         }
 }
 
-.image-container.section-two.right {
-    width: 100%;
-    transform: translate(19.5%, 10%);
+.section-two.image-container.right {
+    transform: translateY(10%);
+    padding-left: 7%;
+    order: 4;
         img {
             box-shadow: -20px 22px 0px -5px $secondary;
         }
+}
+
+.section-two.text-right {
+    order: 3;
+    color: $accent;
+    padding: 5% 15.5% 0 7%;
+}
+
+.section-two.text-left {
+    order: 3;
+    text-align: right;
+    color: $accent;
+    padding: 7% 7% 0 15%;
+}
+
+.section-two p {
+    margin: 10px 0 50px 0;
 }
 
 // **********Third section *********************************************
 
 .third-section {
     background-color: $background;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        .text-content.section-three {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 30px;
+        .section-three {
+            text-align: center;
+            padding: 8% 0 6% 0;
+            p {
+                margin: 10px 0 50px 0;
+                text-align: left;
+            }
         }
 }
 
-.text-content.section-three h3 {
-    @include heading(2.8rem, $primary);
-    line-height: 4.9rem;
-}
 
-.text-content.section-three p {
-    @include body(#3e3e3e, 400);
-    letter-spacing: 0.8px;
-    line-height: 20px;
-    margin: 15px 0 30px 0;
-}
-
-.text-content.section-three a {
+.section-three.link {
     @include link-button;
 }
 
@@ -155,43 +110,30 @@ article.left a {
 
 .fifth-section {
     background-color: $background;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.section-five.grid {
+.section-five {
     display: flex;
-    width: 85%;
+    padding: 80px 0;
 }
 
-.text-content.section-five {
+.section-five article {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 5px;
-        h3 {
-            @include heading(2.8rem, $primary);
-            line-height: 4.9rem;
-        }
+    justify-content: center;
+    width: 70%;
+    padding-left: 5%;
         p {
-            @include body(#3e3e3e, 400);
-            letter-spacing: 0.8px;
-            line-height: 20px;
+            margin: 40px 0 50px 0;
         }
-        a {
+        link {
             @include link-button;
-            margin-top: 25px;
         }
 }
 
 .image-container.section-five {
-    flex: 0 0 20%;
-    min-width: 200px;
-    margin: 0 70px 20px 50px;
-    border: 5px solid red;
+    width: 30%;
         img {
             box-shadow: -20px 22px 0px -5px $secondary;
         }
@@ -200,16 +142,13 @@ article.left a {
 // ******Sixth section****************************
 .sixth-section {
     background-color: $primary;
-    height: 80vh;
-    display: flex;
-    align-items: center;
 }
 
-.gallery-grid {
+.gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 30px;
-    width: 85%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 100px 0;
 }
 
 // *******Footer*********************************

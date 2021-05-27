@@ -1,0 +1,105 @@
+.blog-container {
+    background-color: $background;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    max-width: 2000px;
+}
+
+//Sidebar ********
+
+.side-box {
+    background-color: $primary;
+    padding: 20px;
+    margin: 120px 40px 0 40px;
+    padding-bottom: 60px;
+        .side-image {
+            margin-left: -90px;
+            transform: translateY(-8%,);
+        }
+}
+
+.side-box ul {
+    list-style: disc;
+    margin-left: 20px;
+    line-height: 4rem;
+}
+
+.side-box p {
+    padding: 0 20px 60px 0;
+}
+
+.side-box p,
+.side-box ul {
+    color: $accent;
+}
+
+// Blog section
+
+.post-container {
+    margin-top: -85px;
+}
+
+.post-image {
+    padding-left: 40px;
+        img {
+            box-shadow: -20px 20px $secondary;
+        }
+}
+
+.post {
+    border-left: 5px solid $secondary;
+    border-bottom: 5px solid $secondary;
+    padding: 6% 5% 10% 10%;
+    margin-left: 20px;
+}
+
+.post-container p {
+    padding-top: 30px;
+}
+
+.post-info,
+.comment-info {
+    color: $primary;
+    font-weight: bold;
+    margin-top: -24px;
+}
+
+// Comment section
+
+.comments {
+    margin: 5% 5% 1% 12%;
+}
+
+.comment {
+    display: flex;
+    margin: 5% 0;
+}
+
+.headshot-image {
+    margin-right: 3%;
+}
+
+.comment-text {
+    padding: 2% 2%;
+    width: 100%;
+        .comment-info {
+           padding-bottom: 1%;
+        }
+}
+
+// Form
+
+form[action="comment-form"] {
+    background-color: transparent;
+    padding-bottom: 8%;
+    margin: 0 7% 0 10%;
+}
+
+.comment-form input {
+        color: #333;
+}
+
+.comment-form button {
+    background-color: $primary;
+    color: $secondary;
+}
