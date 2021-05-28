@@ -45,7 +45,6 @@
 .second-grid {
     display: flex;
     flex-wrap: wrap;
-    // padding: 100px 0;
 }
 
 .section-two {
@@ -150,10 +149,3 @@
     grid-gap: 40px;
     padding: 100px 0;
 }
-
-// *******Footer*********************************
-
-footer {
-    @include footer;
-}
-

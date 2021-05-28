@@ -1,14 +1,6 @@
-// * {
-//     overflow:hidden;
-// }
-
+// forgot to change this to 125% and update fonts
 html {
     font-size: 62.5%;
-}
-
-body {
-    @include body(#343434, 400);
-    line-height: 2.8rem;
 }
 
 h1,
@@ -40,16 +32,9 @@ a {
 
 .wrapper {
     max-width: 1300px; 
-    width: 95%; 
+    width: 85%; 
     margin: 0 auto;
     }
-
-
-.inner-wrapper {
-    max-width: 1400px;
-    width: 90%;
-    margin: 0 auto;
-}
 
 .skip-link {
     position: absolute;
@@ -66,6 +51,11 @@ a {
 
 .burger-nav {
     display: none;
+}
+
+body {
+    @include body(#343434, 400, 2rem);
+    line-height: 2.4rem;
 }
 
 .blue-h2 {
@@ -90,5 +80,8 @@ a {
 
 .link {
     @include link-button;
+    &:hover {
+        box-shadow:1px 2px 2px goldenrod;
+        }
 }
 

@@ -10,7 +10,7 @@
 }
 
 .main-nav li a {
-    @include body($accent, 700);
+    @include body($accent, 700, 2rem);
     border-bottom: 3px solid transparent;
     &:hover,
     &:active,
@@ -21,15 +21,15 @@
 }
 
 .home-header,
-.contact-header,
-.blog-header {
+.blog-header,
+.contact-header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .home-header {
-    background-image: url(/assets/home-header.jpg);
+    background-image: url(../assets/home-header.jpg);
     background-size: cover;
     position: relative;
     background-position: top;
@@ -53,14 +53,6 @@
 }
 
 
-// Contact
-
-.contact-header {
-    background-image: url(/assets/contact-header.jpg);
-    overflow: hidden;
-}
-
-
 .contact-header h1,
 .blog-header h1 {
     @include heading(6.6rem, $accent);
@@ -68,29 +60,11 @@
     text-shadow: 2px 2px 4px #000;
 }
 
-.main-nav {
-    display: flex;
-    text-align: center;
-    padding-bottom: 100px;
-}
-
-.main-nav li {
-    padding: 30px 26px 20px 0;
-}
-
-.main-nav li a {
-    @include body($accent, 700);
-    border-bottom: 3px solid transparent;
-    &:hover,
-    &:active,
-    &:focus {
-        transition: ease-in 0.3s;
-        border-bottom: 3px solid $secondary;
-    }
+.contact-header {
+    background-image: url(../assets/contact-header.jpg);
+    overflow: hidden;
 }
 
 .blog-header {
     background: url(../assets/blog-header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
