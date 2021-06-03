@@ -49,10 +49,6 @@ a {
     left: 0;
 }
 
-.burger-nav {
-    display: none;
-}
-
 body {
     @include body(#343434, 400, 2rem);
     line-height: 2.4rem;

@@ -75,25 +75,75 @@
 
 @media (max-width: 800px) {
 
-    .desktop-nav {
+    .main-nav {
         display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    #nav-button {
+        background: transparent;
+        border: none;
+        color: $primary;
+        padding: 15px;
+        // margin-top: 10px;
+        cursor: pointer;
+            i {
+                color: $secondary;
+                font-size: 2.6rem;
+                text-shadow: 2px 2px 4px #000;
+            }
+    }
+
+    #close {
+        display: none;
+        background: transparent;
+        border: none;
+        color: $primary;
+        padding: 15px;
+            i {
+            color: $secondary;
+            font-size: 2.6rem;
+            text-shadow: 2px 2px 4px #000;
+            }
+    }
+
+    header nav {
+        position: relative;
+    }
+
+    .mobile-nav {
+        display: none;
+        width: 200px;
+        padding: 0;
+        background: $secondary;
+        border-radius: 25px;
+        position: absolute;
+        top: 100%;
+        z-index: 10;
+    }
+
+    .mobile-nav li {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .mobile-nav li a {
+        color: $primary;
+        &:hover,
+        &:active,
+        &:focus {
+        transition: ease-in 0.3s;
+        border-bottom: 3px solid $primary;
+    }
     }
 
     .desktop-only {
         display: none;
     }
 
-    .burger-nav {
-        display: block;
-        text-align: right;
-        button {
-            margin: 20px 0;
-            color: $accent;
-            border: none;
-            background: transparent;
-            font-size: 4rem;
-        }
-    }
 
     .home-header h1 {
         @include heading(5rem, $secondary);

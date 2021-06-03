@@ -20,6 +20,25 @@
     }
 }
 
+// .burger-nav {
+//     display: block;
+//     text-align: right;
+//     border: 1px solid red;
+//         button {
+//             margin: 20px 0;
+//             color: $accent;
+//             border: none;
+//             background: transparent;
+//             font-size: 4rem;
+//             background: $secondary;
+//             padding: 10px 15px 5px;
+//         }
+// }
+
+.mobile-only {
+    display: none;
+}
+
 .home-header,
 .blog-header,
 .contact-header {

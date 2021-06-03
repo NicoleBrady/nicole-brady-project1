@@ -296,10 +296,6 @@ a {
   left: 0;
 }
 
-.burger-nav {
-  display: none;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
@@ -384,6 +380,10 @@ body {
   -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
   border-bottom: 3px solid #FDD908;
+}
+
+.mobile-only {
+  display: none;
 }
 
 .home-header,
@@ -960,24 +960,71 @@ footer {
   }
 }
 @media (max-width: 800px) {
-  .desktop-nav {
+  .main-nav {
     display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  #nav-button {
+    background: transparent;
+    border: none;
+    color: #0D457F;
+    padding: 15px;
+    cursor: pointer;
+  }
+  #nav-button i {
+    color: #FDD908;
+    font-size: 2.6rem;
+    text-shadow: 2px 2px 4px #000;
+  }
+
+  #close {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #0D457F;
+    padding: 15px;
+  }
+  #close i {
+    color: #FDD908;
+    font-size: 2.6rem;
+    text-shadow: 2px 2px 4px #000;
+  }
+
+  header nav {
+    position: relative;
+  }
+
+  .mobile-nav {
+    display: none;
+    width: 200px;
+    padding: 0;
+    background: #FDD908;
+    border-radius: 25px;
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+  }
+
+  .mobile-nav li {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .mobile-nav li a {
+    color: #0D457F;
+  }
+  .mobile-nav li a:hover, .mobile-nav li a:active, .mobile-nav li a:focus {
+    -webkit-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
+    border-bottom: 3px solid #0D457F;
   }
 
   .desktop-only {
     display: none;
-  }
-
-  .burger-nav {
-    display: block;
-    text-align: right;
-  }
-  .burger-nav button {
-    margin: 20px 0;
-    color: #FFFFFF;
-    border: none;
-    background: transparent;
-    font-size: 4rem;
   }
 
   .home-header h1 {
